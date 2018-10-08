@@ -1,0 +1,16 @@
+<% include partials/header %>
+
+<section class="hero is-primary is-medium">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title">
+          <%= data[0].name %>
+        </h1>
+        <h2 class="subtitle">
+          <%= data[0].summary %>
+        </h2>
+      </div>
+    </div>
+</section>
+<%= JSON.stringify(data) %>
+<% include partials/footer %>

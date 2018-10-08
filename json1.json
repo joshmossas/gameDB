@@ -1,0 +1,299 @@
+[{
+    "id": 77207,
+    "name": "Dune: The Battle for Arrakis",
+    "slug": "dune-the-battle-for-arrakis",
+    "url": "https://www.igdb.com/games/dune-the-battle-for-arrakis",
+    "created_at": 1513028265976,
+    "updated_at": 1515788886283,
+    "summary": "The completely overhauled Mega Drive version of Dune, including new graphics, new features, new levels, technology tree changes and streamlined controls.",
+    "collection": 11,
+    "popularity": 1,
+    "category": 0,
+    "keywords": [1102, 1471, 1928, 2044, 2762, 4346, 4767, 4959, 6001, 6019, 6078, 9349, 12350, 13017],
+    "themes": [18],
+    "genres": [11, 15],
+    "cover": {
+        "url": "//images.igdb.com/igdb/image/upload/t_thumb/klrrql6nidmxmmyef7zu.jpg",
+        "cloudinary_id": "klrrql6nidmxmmyef7zu",
+        "width": 355,
+        "height": 480
+    },
+    "esrb": {
+        "rating": 5
+    }
+}, {
+    "id": 74472,
+    "name": "JumpSky",
+    "slug": "jumpsky",
+    "url": "https://www.igdb.com/games/jumpsky",
+    "created_at": 1508147511064,
+    "updated_at": 1523324557935,
+    "summary": "Jump and have fun.",
+    "popularity": 1,
+    "category": 0,
+    "game_modes": [1],
+    "first_release_date": 1509494400000,
+    "platforms": [6],
+    "release_dates": [{
+        "category": 1,
+        "platform": 6,
+        "date": 1509494400000,
+        "region": 8,
+        "human": "2017-Nov",
+        "y": 2017,
+        "m": 11
+    }],
+    "screenshots": [{
+        "url": "//images.igdb.com/igdb/image/upload/t_thumb/hrakoshmvlkjfdudevkh.jpg",
+        "cloudinary_id": "hrakoshmvlkjfdudevkh",
+        "width": 1920,
+        "height": 1080
+    }, {
+        "url": "//images.igdb.com/igdb/image/upload/t_thumb/rqclpdoeteazfldoy5st.jpg",
+        "cloudinary_id": "rqclpdoeteazfldoy5st",
+        "width": 1920,
+        "height": 1080
+    }, {
+        "url": "//images.igdb.com/igdb/image/upload/t_thumb/o5cwqaihp5n2flcjwmrc.jpg",
+        "cloudinary_id": "o5cwqaihp5n2flcjwmrc",
+        "width": 1920,
+        "height": 1080
+    }, {
+        "url": "//images.igdb.com/igdb/image/upload/t_thumb/o3clujmd4ypucjkzohgs.jpg",
+        "cloudinary_id": "o3clujmd4ypucjkzohgs",
+        "width": 1920,
+        "height": 1080
+    }, {
+        "url": "//images.igdb.com/igdb/image/upload/t_thumb/tydiaxprspxw6iiq26qu.jpg",
+        "cloudinary_id": "tydiaxprspxw6iiq26qu",
+        "width": 1920,
+        "height": 1080
+    }],
+    "websites": [{
+        "category": 1,
+        "url": "http://www.jumpsky.co"
+    }, {
+        "category": 13,
+        "url": "https://store.steampowered.com/app/731910"
+    }],
+    "external": {
+        "steam": "731910"
+    }
+}, {
+    "id": 65585,
+    "name": "Dino Breeder 3",
+    "slug": "dino-breeder-3",
+    "url": "https://www.igdb.com/games/dino-breeder-3",
+    "created_at": 1505295411836,
+    "updated_at": 1515856433608,
+    "summary": "Dino Breeder 3 is a Japanese only Game Boy Color game.",
+    "collection": 3421,
+    "popularity": 1.333333333333333,
+    "games": [55036, 29173, 55590, 23345, 19376, 9760, 33603, 36962, 76731, 55888],
+    "tags": [268435471, 536874694, 536878225],
+    "category": 0,
+    "keywords": [3782, 7313],
+    "genres": [15],
+    "cover": {
+        "url": "//images.igdb.com/igdb/image/upload/t_thumb/zptbkk6pk1nlemg2jszx.jpg",
+        "cloudinary_id": "zptbkk6pk1nlemg2jszx",
+        "width": 343,
+        "height": 428
+    }
+}, {
+    "id": 57605,
+    "name": "Gaelic Games: Football 2",
+    "slug": "gaelic-games-football-2",
+    "url": "https://www.igdb.com/games/gaelic-games-football-2",
+    "created_at": 1504617306401,
+    "updated_at": 1513075396502,
+    "summary": "Gaelic Games: Football 2 is the second game in the Gaelic Games franchise. It was launched on November 7th 2007. It was launched beside Gaelic Games: Hurling",
+    "collection": 4887,
+    "popularity": 1.333333333333333,
+    "category": 0,
+    "keywords": [26, 27, 994, 1166, 2438, 7180, 7200],
+    "genres": [14],
+    "cover": {
+        "url": "//images.igdb.com/igdb/image/upload/t_thumb/nst4ashvwmwn9lur9t3z.jpg",
+        "cloudinary_id": "nst4ashvwmwn9lur9t3z",
+        "width": 300,
+        "height": 427
+    },
+    "pegi": {
+        "rating": 1
+    }
+}, {
+    "id": 71969,
+    "name": "The Aly & AJ Adventure",
+    "slug": "the-aly-and-aj-adventure",
+    "url": "https://www.igdb.com/games/the-aly-and-aj-adventure",
+    "created_at": 1506684249654,
+    "updated_at": 1513006600862,
+    "summary": "A game starring Aly and AJ Michalka, members of the pop duo 78violet.",
+    "popularity": 1,
+    "games": [34919, 36608, 16468, 70691, 49391, 51464, 23175, 59516, 28029, 49893],
+    "tags": [1, 34, 536871446, 536875054, 536875139, 536875140, 536875395],
+    "category": 0,
+    "keywords": [534, 4142, 4227, 4228, 4483],
+    "themes": [1, 34],
+    "cover": {
+        "url": "//images.igdb.com/igdb/image/upload/t_thumb/xsgo9yfjimqrrv1mxucw.jpg",
+        "cloudinary_id": "xsgo9yfjimqrrv1mxucw",
+        "width": 160,
+        "height": 160
+    }
+}, {
+    "id": 60971,
+    "name": "Little Raiders: Robin's Revenge",
+    "slug": "little-raiders-robins-revenge",
+    "url": "https://www.igdb.com/games/little-raiders-robins-revenge",
+    "created_at": 1504864166313,
+    "updated_at": 1516688444908,
+    "summary": "Little Raiders: Robin's Revenge is a free to play mobile title. In the game, players are challenged to build up an army to fight the evil Sheriff. The game is played in two parts: a Tiny Tower like management sim and a small scale RTS game that falls somewhere between Cannon Fodder and Dawn of War 2.",
+    "popularity": 1,
+    "games": [23345, 18623, 55036, 26769, 2015, 29173, 26841, 24512, 30229, 932],
+    "tags": [22, 268435471, 536871063, 536871208, 536871938, 536874694],
+    "category": 0,
+    "keywords": [151, 296, 1026, 3782],
+    "themes": [22],
+    "genres": [15],
+    "cover": {
+        "url": "//images.igdb.com/igdb/image/upload/t_thumb/xfx1sfcmnhiriut8aibm.jpg",
+        "cloudinary_id": "xfx1sfcmnhiriut8aibm",
+        "width": 320,
+        "height": 568
+    },
+    "esrb": {
+        "rating": 3
+    }
+}, {
+    "id": 40036,
+    "name": "Galactic Warriors",
+    "slug": "galactic-warriors",
+    "url": "https://www.igdb.com/games/galactic-warriors",
+    "created_at": 1498469104340,
+    "updated_at": 1515822582854,
+    "summary": "The game is controlled with an 8-way joystick and three buttons: the attack button, the guard button, and the weapon selection button. There are six stages, each with different themes and environmental effects based on gravity. Some other features introduced in Galactic Warriors that were used in later fighting games include block damage, air-blocking, the ability to shoot/throw projectiles, the ability to execute multiple attacks while airborne, a modern health bar (as opposed to a health meter with notches like in Capcom's Mega Man series that made their debut two years later), the ability to switch between armed and unarmed and attacks of varying levels of strength. \n \nAnother feature introduced at the time allows the player to choose one of three Mechas, each with their own movesets: Samson, Gaea and Poseidon. When one is selected, the player must use it to destroy other robots in each planet. Other than the playable characters, there are several non-playable characters and bosses with original designs and unique movesets. In the final battle, the player will face the same character he or she chose. After defeating the final opponent, the game goes back to the beginning and the player's chosen character and the opponents will have an extra weapon. \n \nUnlike in the single player modes of other fighting games, Galactic Warriors lacks continues and gives the player a number of lives similar to ones in some other genres from platform games to beat 'em ups. When the player loses all of his or her lives, the game is over and it returns to attract mode. In each battle, the timer starts at one minute and thirty seconds, and when it drops to zero before any player is knocked out, the player with the least amount of damage wins. Players can monitor this by looking at their life bars. At the start of the fight, both players life bars are blue, but as the fight progresses, the life bar changes to a pink color for the player with the least amount of health remaining or most damage taken. Therefore, if a player's life bar is pink when/if time runs out, that player will lose.",
+    "popularity": 1.333333333333333,
+    "games": [68287, 25300, 36950, 11253, 71455, 21063, 27314, 2558, 19448, 19099],
+    "tags": [1, 18, 268435460, 536870979, 536870990, 536871019, 536871079, 536871213, 536871487, 536871882, 536871889, 536874398, 536875075, 536875358, 536876028, 536876352, 536876857, 536877014],
+    "category": 0,
+    "keywords": [67, 78, 107, 167, 301, 575, 970, 977, 3486, 4163, 4446, 5116, 5440, 5945, 6102],
+    "themes": [1, 18],
+    "genres": [4],
+    "cover": {
+        "url": "//images.igdb.com/igdb/image/upload/t_thumb/j6etkqnsr5xolxr06ctj.jpg",
+        "cloudinary_id": "j6etkqnsr5xolxr06ctj",
+        "width": 992,
+        "height": 703
+    }
+}, {
+    "id": 72161,
+    "name": "Cosmic Bugs",
+    "slug": "cosmic-bugs",
+    "url": "https://www.igdb.com/games/cosmic-bugs",
+    "created_at": 1506689432903,
+    "updated_at": 1513023871876,
+    "popularity": 1.333333333333333,
+    "games": [55036, 29173, 55590, 23345, 19376, 11362, 9760, 33603, 36962, 55888],
+    "tags": [268435471, 536874694],
+    "category": 0,
+    "keywords": [3782],
+    "genres": [15],
+    "cover": {
+        "url": "//images.igdb.com/igdb/image/upload/t_thumb/obrgi1zlum5prc52vcjs.jpg",
+        "cloudinary_id": "obrgi1zlum5prc52vcjs",
+        "width": 528,
+        "height": 396
+    }
+}, {
+    "id": 67685,
+    "name": "SBK: Superbike World Championship 09",
+    "slug": "sbk-superbike-world-championship-09",
+    "url": "https://www.igdb.com/games/sbk-superbike-world-championship-09",
+    "created_at": 1505467284919,
+    "updated_at": 1515778227750,
+    "summary": "SBK 09 simulates the 2009 season of the World Superbike Championship for consoles and PC.",
+    "collection": 4303,
+    "popularity": 1.333333333333333,
+    "games": [58785, 12347, 40470, 28856, 66002, 64284, 64272, 60974, 28529, 67625],
+    "tags": [268435466, 536870969, 536872205, 536874337, 536875069, 536875117],
+    "category": 0,
+    "keywords": [57, 1293, 3425, 4157, 4205],
+    "genres": [10],
+    "cover": {
+        "url": "//images.igdb.com/igdb/image/upload/t_thumb/qcwxhwuov6hmazmiwazf.jpg",
+        "cloudinary_id": "qcwxhwuov6hmazmiwazf",
+        "width": 640,
+        "height": 911
+    },
+    "pegi": {
+        "rating": 1
+    }
+}, {
+    "id": 34988,
+    "name": "Hush",
+    "slug": "hush",
+    "url": "https://www.igdb.com/games/hush",
+    "created_at": 1495818887080,
+    "updated_at": 1523414214913,
+    "summary": "Surrounded by blood freezing phobias intent on absorbing her into oblivion",
+    "rating": 40,
+    "popularity": 1.333333333333333,
+    "total_rating": 40,
+    "total_rating_count": 0,
+    "rating_count": 0,
+    "games": [55289, 16468, 25311, 72412, 37022, 59516, 47823, 36608, 25646, 25300],
+    "tags": [1, 268435468, 268435487, 268435488],
+    "category": 0,
+    "game_modes": [1],
+    "themes": [1],
+    "genres": [12, 31, 32],
+    "first_release_date": 1438128000000,
+    "platforms": [6],
+    "release_dates": [{
+        "category": 0,
+        "platform": 6,
+        "date": 1438128000000,
+        "region": 8,
+        "human": "2015-Jul-29",
+        "y": 2015,
+        "m": 7
+    }],
+    "screenshots": [{
+        "url": "//images.igdb.com/igdb/image/upload/t_thumb/r0jxzxpb3eco9tbms8j4.jpg",
+        "cloudinary_id": "r0jxzxpb3eco9tbms8j4",
+        "width": 1827,
+        "height": 1080
+    }, {
+        "url": "//images.igdb.com/igdb/image/upload/t_thumb/ib2cqhy4mgp5z0txwckt.jpg",
+        "cloudinary_id": "ib2cqhy4mgp5z0txwckt",
+        "width": 1827,
+        "height": 1080
+    }, {
+        "url": "//images.igdb.com/igdb/image/upload/t_thumb/wxbnfk69bdhgldcguqd8.jpg",
+        "cloudinary_id": "wxbnfk69bdhgldcguqd8",
+        "width": 1827,
+        "height": 1080
+    }, {
+        "url": "//images.igdb.com/igdb/image/upload/t_thumb/lq90b8idrxqd3cd4intl.jpg",
+        "cloudinary_id": "lq90b8idrxqd3cd4intl",
+        "width": 1827,
+        "height": 1080
+    }, {
+        "url": "//images.igdb.com/igdb/image/upload/t_thumb/cmiwp8en4tmy3f8ddtwp.jpg",
+        "cloudinary_id": "cmiwp8en4tmy3f8ddtwp",
+        "width": 1920,
+        "height": 892
+    }],
+    "websites": [{
+        "category": 1,
+        "url": "http://www.gamestudio78.com"
+    }, {
+        "category": 13,
+        "url": "https://store.steampowered.com/app/379990"
+    }],
+    "external": {
+        "steam": "379990"
+    }
+}]
