@@ -1,54 +1,37 @@
-<nav class="navbar" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-        <a class="navbar-item" href="/">
-            <img src="https://data.whicdn.com/images/173737082/large.png" >
-        </a>
-
-        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-        </a>
-    </div>
-
-    <div id="navbarBasicExample" class="navbar-menu">
-        <div class="navbar-start">
-            <a href="/" class="navbar-item">Home</a>
-            <a class="navbar-item">Documentation</a>
-            <div class="navbar-item has-dropdown is-hoverable">
-                <a class="navbar-link">
-                    More
+<header>
+    <div class="container">
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="/">
+                    <div id="logo">GAME<strong>DB</strong></div>
                 </a>
-
-                <div class="navbar-dropdown">
-                    <a class="navbar-item">
-                        About
-                    </a>
-                    <a class="navbar-item">
-                        Jobs
-                    </a>
-                    <a class="navbar-item">
-                        Contact
-                    </a>
-                    <hr class="navbar-divider">
-                    <a class="navbar-item">
-                        Report an issue
-                    </a>
+                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start">
+                    <a href="/" class="navbar-item">Home</a>
+                    <a href="/games" class="navbar-item">Games</a>
+                </div>
+        
+                <div class="navbar-end">
+                    <form class="columns navbar-item" style="justify-content: flex-end" method="PUT" action="/games/search">
+                        <div class="column is-two-thirds">
+                            <div class="control has-icons-left">
+                                <span class="icon is-small is-left">
+                                    <i class="fas fa-search"></i>
+                                </span>
+                                <input class='input' type="text" name="query" placeholder="search games..." required>
+                            </div>
+                        </div>
+                        <input class='button is-primary' style="margin-left: -10px;" type="submit" value="submit">
+                    </form>
                 </div>
             </div>
-        </div>
-
-        <div class="navbar-end">
-            <div class="navbar-item">
-                <div class="buttons">
-                    <a class="button is-primary">
-                        <strong>Sign up</strong>
-                    </a>
-                    <a class="button is-light">
-                        Log in
-                    </a>
-                </div>
-            </div>
-        </div>
+        </nav>
     </div>
-</nav>
+            
+</header>

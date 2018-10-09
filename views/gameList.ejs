@@ -1,0 +1,29 @@
+<% include partials/header %>
+
+<div class="hero">
+    <div class="container">
+        <h1>Games</h1>
+        <form method="PUT" action="/games">
+            <select name="sort">
+                <option value="name:desc">alphabetical</option>
+                <option value="popularity:desc">popularity</option>
+            </select>
+            <input type="text" name="search">
+            <input type="submit" value="submit">
+        </form>
+    </div>
+</div>
+<section class="section">
+    <div class="container">
+        <div class="columns is-multiline">
+        <% data.body.forEach(function(game){ %>
+            <a class="column is-one-quarter" href="/games/<%= game.id %>">
+                <h2><%= game.name %></h2>
+                <p><%= game.id %></p>
+            </a>
+        <% }) %>
+        </div>
+    </div>
+</section>
+<%= JSON.stringify(data) %>
+<% include partials/footer %>

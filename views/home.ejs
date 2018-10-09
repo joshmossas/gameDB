@@ -14,30 +14,8 @@
 <section class="section">
     <div class="container">
         <div class="columns is-multiline">
-            <% data.forEach(function(game){ %>
-                <% let image = game.cover.url %>
-                <div class="column is-one-quarter">
-                    <div class="card">
-                        <a href="/games/<%= game.id %>">
-                            <div class="card-content">
-                                <h2><%= game.name %></h2>
-                                <% if (game.aggregated_rating) { %>
-                                    <p><%= Math.round(game.aggregated_rating) %></p>
-                                <% } %>
-                            </div>
-                            <div class="card-image">
-                                <figure class="image is-4by3">
-                                    <img src="<%= image.replace('t_thumb', 't_cover_big') %>">    
-                                </figure>
-                            </div>
-                        </a>    
-                    </div>            
-                </div>
-            <%})%>
         </div>        
     </div>
 </section>
-
-<% function roundToTwo(num) { return +(Math.round(num + "e+2")  + "e-2");} %>
 
 <% include partials/footer %>

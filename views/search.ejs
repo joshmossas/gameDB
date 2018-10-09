@@ -1,0 +1,91 @@
+<% include partials/header %>
+
+<section class="hero is-medium is-primary">
+    <div class="hero-body">
+        <div class="container"
+            <h1>Search</h1>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="columns">
+            <div class="column is-one-quarter">
+                <form method="PUT" action="/games/search">
+                    <div class="field">
+                        <div class="control has-icons-left">
+                            <div class="select">
+                                <select name="sort">
+                                    <option value=''>Relevance</option>
+                                    <option 
+                                        <% if(sortOrder === 'aggregated_rating:desc') { %>
+                                            selected
+                                        <% } %>
+                                    value="aggregated_rating:desc">Critic Rating</option>
+                                    <option 
+                                        <% if(sortOrder === 'rating:desc') { %>
+                                            selected
+                                        <% } %>
+                                    value="rating:desc">User Rating</option>
+                                    <option 
+                                        <% if(sortOrder === 'popularity:desc') { %>
+                                            selected
+                                        <% } %>
+                                    value="popularity:desc">Popularity</option>
+                                </select>                        
+                            </div>
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-sort"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="field is-hidden">
+                        <div class="control">
+                            <input class="input" type="text" name="query" value="<%= searchQuery %>">
+                        </div>
+                    </div>
+                    <input type="submit" value="submit" class="button is-primary">
+                </form>
+            </div>
+            <div class="column">
+                <h1 class="title">Results for "<%= searchQuery %>"</h1>
+                <p style="margin-bottom: 50px;">Showing results <%= offset + 1 %>-<%= 20 * page %></p>
+                <div class="columns is-multiline">
+                    <% data.body.forEach(function(game){ %>
+                        <div class="searchItem column is-full">
+                            <a href="/games/<%= game.id %>">
+                                <div class="columns is-mobile">
+                                    <div class="column" style="flex: none">                               
+                                        <% if(game.cover) { %>
+                                                <img src="<%= game.cover.url.replace('t_thumb', 't_thumb_2x') %>"> 
+                                            
+                                        <% } else { %>
+                                            <div style="background: rgb(168, 168, 168); display: flex; justify-content: center; align-items: center; font-size: 50px; width: 180px; height: 180px; color: white">
+                                                <i class="fas fa-question"></i>
+                                            </div>
+                                        <% } %>
+                                    </div>
+                                    <div class="column">
+                                        <h2 class="subtitle"><strong><%= game.name %></strong></h2>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    <% }) %>
+                </div>
+                <nav class="pagination" role="navigation" aria-label="pagination">
+                    <% var paginationBase = `/games/search?query=${searchQuery}` %>
+                    <% if(sortOrder) { paginationBase += `&sort=${sortOrder}` } %>
+                    <% if(page > 1) { %>
+                    <a href="<%= paginationBase %>&page=<%= page - 1 %>" class="pagination-previous">Previous</a>
+                    <% } %>
+                    <a href="<%= paginationBase %>&page=<%= page + 1 %>" class="pagination-next">Next page</a>
+                    <ul class="pagination-list"></ul>
+                </nav>        
+            </div>
+        </div>
+    </div>
+</section>
+
+<% include partials/footer %>

@@ -1,0 +1,104 @@
+:root {
+    font-size: 18px;
+}
+
+body {
+    background: #F8F8F8;
+    min-height: 100vh;
+}
+
+header {
+    background: white;
+    padding: 20px 0px;
+}
+
+#logo {
+    font-size: 2rem;
+    font-weight: 100;
+    margin-right: 20px;
+}
+#logo > strong {
+    font-weight: 900;
+}
+
+.wBannerImage .title {
+    font-size: 2.5rem;
+    font-weight: 900
+}
+
+.hero.wBannerImage {
+    position: relative;
+}
+
+.hero.wBannerImage > .hero-body {
+    padding-bottom: 3rem;
+}
+
+.bannerImageOuter {
+    position: absolute;
+    overflow: hidden;
+    background: black;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.bannerImageOuter > .bannerImage {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    overflow: hidden;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bannerImage > img {
+    filter: blur(10px);
+    -ms-filter: blur(10px);
+    -webkit-filter: blur(10px);
+    opacity: 0.6;
+    width: 100%;
+}
+
+.coverImage {
+    position: relative;
+}
+
+.coverImage img {
+    position: absolute;
+    top: -100px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+    width: 95%;
+}
+
+.coverImage img.vertical {
+    top: -200px;
+}
+
+.coverImage img.horizontal {
+    top: 0px;
+}
+
+.hero.is-primary, .button.is-primary {
+    background-color: rgb(63, 80, 231);
+}
+
+.button.is-primary:hover {
+    background-color: rgb(52, 66, 185);
+}
+
+.searchItem {
+    transition: background 200ms ease-out, box-shadow 200ms ease-out;
+    -moz-transition: background 200ms ease-out, box-shadow 200ms ease-out;
+    -o-transition: background 200ms ease-out, box-shadow 200ms ease-out;
+    -webkit-transition: background 200ms ease-out, box-shadow 200ms ease-out;
+}
+.searchItem:hover {
+    background: white;
+    box-shadow: 0px 0px 150px rgba(0, 0, 0, 0.226);
+}

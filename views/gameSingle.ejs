@@ -1,16 +1,97 @@
 <% include partials/header %>
 
-<section class="hero is-primary is-medium">
-    <div class="hero-body">
-      <div class="container">
-        <h1 class="title">
-          <%= data[0].name %>
-        </h1>
-        <h2 class="subtitle">
-          <%= data[0].summary %>
-        </h2>
+<section class="hero is-primary is-large wBannerImage">
+  <% if(data.screenshots) { %>
+  <div class="bannerImageOuter">
+    <div class="bannerImage">
+      <img src="<%= data.screenshots[0].url.replace('t_thumb', 't_1080p') %>">
+    </div>
+  </div>
+  <% } %>
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-one-third">
+          <div class="coverImage">
+            <% if(data.cover) { %>
+              <% var aspectRatio = data.cover.width / data.cover.height; var imgClass = '' %>
+              <% if(aspectRatio < 0.7){imgClass = 'vertical'}else if(aspectRatio > 1){imgClass = 'horizontal'} %>
+            <img class="<%= imgClass %>" src="<%= data.cover.url.replace('t_thumb', 't_720p') %>">
+            <% } %>
+          </div>
+        </div>
+        <div class="column">
+          <h1 class="title is-size-2">
+            <% let releaseYear = new Date(data.first_release_date) %>
+            <%= data.name %> <% if(isNaN(releaseYear) != true){ %>(<%= releaseYear.getFullYear() %>) <%}%>
+          </h1>
+          <% if(genres){ %>
+          <h2 class="subtitle">
+              <% for(let i = 0; i < genres.length; i++){ %><% if(i != 0){ %>, <% } %><%= genres[i].name %><% } %>
+          </h2>
+          <% } %>
+        </div>
       </div>
     </div>
+  </div>
 </section>
-<%= JSON.stringify(data) %>
+
+<section class="section" style="min-height: 320px;">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-one-third">
+
+      </div>
+      <div class="column">
+        <div class="columns is-multiline">
+          <div class="column is-full">
+            <div class="content">
+                <p><%= data.summary %></p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card">
+              <div class="card-header">
+                <div class="card-header-title">
+                  <% if(data.aggregated_rating) { %>
+                  Critic Rating: <%= Math.round(data.aggregated_rating) %> / 100 (<%= data.aggregated_rating_count %> reviews)
+                  <%} else { %>
+                  No Critic Reviews
+                  <% } %>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card ">
+                <div class="card-header">
+                  <div class="card-header-title">
+                    <% if(data.rating) { %>
+                    User Rating: <%= Math.round(data.rating) %> / 100 (<%= data.rating_count %> user reviews)
+                    <% } else { %>
+                    No User Reviews
+                    <% } %>
+                  </div>
+                </div>
+            </div>
+          </div>      
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<% if(data.screenshots){ %>
+<section class="section">
+  <div class="container">
+    <h2 class="title">Screenshots</h2>
+    <div class="columns is-multiline">
+    <% data.screenshots.forEach(function(image){ %>
+      <div class="column is-one-quarter">
+        <img src="<%= image.url.replace('t_thumb', 't_screenshot_med') %>">
+      </div>
+    <% }) %>
+    </div>
+  </div>
+</section>
+<% } %>
 <% include partials/footer %>
