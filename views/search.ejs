@@ -78,9 +78,9 @@
                     <% var paginationBase = `/games/search?query=${searchQuery}` %>
                     <% if(sortOrder) { paginationBase += `&sort=${sortOrder}` } %>
                     <% if(page > 1) { %>
-                    <a href="<%= paginationBase %>&page=<%= page - 1 %>" class="pagination-previous">Previous</a>
+                    <a href="<%= paginationBase %>&page=<%= Number(page) - 1 %>" class="pagination-previous">Previous</a>
                     <% } %>
-                    <a href="<%= paginationBase %>&page=<%= page + 1 %>" class="pagination-next">Next page</a>
+                    <a href="<%= paginationBase %>&page=<%= Number(page) + 1 %>" class="pagination-next">Next page</a>
                     <ul class="pagination-list"></ul>
                 </nav>        
             </div>

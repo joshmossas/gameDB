@@ -61,7 +61,7 @@ app.get("/games/search", function(req, res){
         res.render("search", {data: response, searchQuery: search, sortOrder: sort, offset: settings.offset, page: pageNum})
     })
     .catch(error => {
-        throw error
+        res.send("404: Page not found")
     })
 })
 
@@ -86,7 +86,7 @@ app.get("/games/:id", function(req, res){
             })
             .catch(error => {
                 throw error
-            })    
+            })
         }
         else {
             res.render("gameSingle", {data: data, genres: ''})
@@ -94,9 +94,19 @@ app.get("/games/:id", function(req, res){
         
     })
     .catch(error => {
-        throw error
+        res.send("404 error: Game not found")
     })
 })
+
+// Route not found (404)
+app.use(function(req, res, next) {
+    return res.status(404).send({ message: 'Route'+req.url+' Not found.' });
+  });
+
+// Any error
+app.use(function(err, req, res, next) {
+    return res.status(500).send({ error: err });
+  });
 
 app.listen(8000, function(){
     console.log("Server running.\nView project at http://localhost:8000")
